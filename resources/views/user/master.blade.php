@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>@yield('title')</title>
-    <base href=" {{asset("")}} ">
     @include('user.user_layout.import')
 
 </head>

@@ -9,9 +9,9 @@
     <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300'
         rel='stylesheet' type='text/css'>
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="{{asset('user/favicon.ico')}}" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('user/css/bootstrap.css')}}">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->

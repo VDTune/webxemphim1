@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,14 +19,14 @@ Route::group(['prefix' => 'admin'], function () {
 
     //Admin login, index ,logout
     Route::get('/', 'AdminController@checkLogin');
-    Route::get('index', 'AdminController@index')->name('admin.index')->middleware('AdminMiddleware');
     Route::get('login', 'AdminController@getLogin')->name('admin.getLogin');
     Route::post('login', 'AdminController@postLogin')->name('admin.postLogin');
+    Route::get('index', 'AdminController@index')->name('admin.index')->middleware('AdminMiddleware');
     Route::get('logout', 'AdminController@logout')->name('admin.logout');
 
     //Admin manage cate
 
-    Route::group(['prefix' => 'cate', 'middleware' => 'AdminMiddleware'], function () {
+    Route::group(['prefix' => 'cate'], function () {
         Route::get('add', 'CateController@create')->name('admin.cate.create');
         Route::post('add', 'CateController@store')->name('admin.cate.store');
         Route::get('list', 'CateController@index')->name('admin.cate.list');

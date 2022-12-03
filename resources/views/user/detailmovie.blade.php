@@ -429,7 +429,7 @@
         follow_href: true
     });
 </script>
-<script src="public/user/js/owl.carousel2.js"></script>
+<script src="{{asset('user/js/owl.carousel2.js')}}"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('body').on('click', '#submitComment', function(e) {
